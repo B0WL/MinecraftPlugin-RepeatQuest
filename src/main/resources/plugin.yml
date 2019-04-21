@@ -3,3 +3,8 @@ main: main.RepeatQuest
 version: 0.0.1-SANPSHOT
 author: B0WL
 api-version: 1.13
+
+commands:
+  Quest:
+    description: quest
+    usage: /<command>  

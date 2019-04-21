@@ -2,6 +2,7 @@ package main;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import listener.CommandListener;
 import util.RecordManager;
 
 public class RepeatQuest extends JavaPlugin{
@@ -14,6 +15,13 @@ public class RepeatQuest extends JavaPlugin{
 		reloadConfig();
 		
 		RecordManager.record("debug", "RecordManager On");
+		
+		try {
+			this.getCommand("Quest").setExecutor(new CommandListener());
+		} catch (Exception e) {
+			getLogger().info("Command Listen Failed");
+			getServer().getPluginManager().disablePlugin(this);
+		}
 		
 		getLogger().info("onEnable has been invoked!");
 	}
