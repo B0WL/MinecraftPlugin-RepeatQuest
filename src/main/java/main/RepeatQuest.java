@@ -1,9 +1,14 @@
 package main;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import listener.CommandListener;
 import util.RecordManager;
+import util.YmlManager;
 
 public class RepeatQuest extends JavaPlugin{
 	public static RepeatQuest instance;
@@ -24,6 +29,17 @@ public class RepeatQuest extends JavaPlugin{
 		}
 		
 		getLogger().info("onEnable has been invoked!");
+		
+
+		YmlManager.test();
+		
+		Map<String,Object> quests =  YmlManager.getQuests("");
+		if(quests !=null) {
+			getLogger().info(quests.toString() );
+		}else {
+			getLogger().info("YML FAILED @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		}
+			
 	}
 
 	@Override

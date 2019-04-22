@@ -29,6 +29,7 @@
 			<id>vault-repo</id>
 			<url>http://nexus.hc.to/content/repositories/pub_releases</url>
 		</repository>
+
 	</repositories>
 
 	<dependencies>
@@ -69,5 +70,6 @@
 			<version>1.7</version>
 			<scope>provided</scope>
 		</dependency>
+
 	</dependencies>
 </project>
