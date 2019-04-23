@@ -1,48 +1,25 @@
 Quests:
   ExampleQuest1:
-    Category: Daily
-    Order:
-      Order1:
-        Type: Kill
-        Entity: minecraft:creeper
-        Amount: 10
-      Order2:
-        Type: Collect
-        Item: iron_ingot
-        Amount: 3
-    Reward:
-      Money: 100
-      Exp: 30
-      Item:
-      - "Stone 1"
-      
+    category: Daily
+    orders:
+    - type: Collect
+      target: STONE
+      amount: 10
+    - type: Collect
+      target: IRON_BARS
+      amount: 10
+    rewardMoney: 100.0
+    rewardExp: 10
+    rewardItems:
+    - IRON_BARS 24
+    - GOLD_BLOCK 12
   ExampleQuest2:
-    Category: Week
-    Order:
-      Order1:
-        Type: Kill
-        Entity: minecraft:creeper
-        Amount: 10
-    Reward:
-      Money: 500
-      Exp: 120
-      Item:
-      - "Stone 5"
-      - "Log:3 1"
-  ExampleQuest3:
-    Category: Week
-    Order:
-      Order1:
-        Type: Kill
-        Entity: minecraft:creeper
-        Amount: 10
-      Order3:
-        Type: Collect
-        Item: blaze_rod
-        Amount: 5
-    Reward:
-      Money: 500
-      Exp: 120
-      Item:
-      - "Stone 5"
-      - "Log:3 1"
+    category: Daily
+    orders:
+    - type: Collect
+      target: COAL
+      amount: 32
+    rewardMoney: 50.0
+    rewardExp: 200
+    rewardItems:
+    - CHARCOAL 16

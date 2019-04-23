@@ -1,2 +1,19 @@
 #디버그 모드
 debug: false
+
+
+
+Categories:
+  Daily:
+    date: 1
+    amount: 7
+  Week:
+    date: 7
+    amount: 4
+  Month:
+    date: 30
+    amount: 2
+  Custom:
+    date: 0
+    hour: 6
+    amount: 3
